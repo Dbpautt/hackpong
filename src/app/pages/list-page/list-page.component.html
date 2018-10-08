@@ -1,0 +1,8 @@
+<ul id="our-grid">
+  <li class="card" *ngFor="let players of players">
+    <a [routerLink]="['/list',players._id]">
+      <p>Ironhacker name: {{this.players.name}}</p>
+      <p>Level: {{this.players.level}}</p>
+    </a> 
+  </li>
+</ul>
